@@ -1,0 +1,77 @@
+.profile {
+	margin: 5vw;
+	.profile_grid {
+		.profile_image_block {
+			div {
+				position: sticky;
+				top: 1px;
+				img {
+					border: 1px solid rgb(124, 124, 124);
+					width: 80%;
+					height: auto;
+					box-shadow: 0 0 25px rgba(255, 255, 255, 0.38);
+				}
+			}
+		}
+
+		.profile_details_block {
+			text-align: start;
+			margin: 0 auto;
+			.profile_details {
+				font-family: "Stylish", sans-serif;
+				h2 {
+					text-decoration: underline;
+					color: rgb(228, 228, 228);
+					margin-bottom: 0;
+				}
+				.bio_section {
+					ul {
+						li {
+							list-style: none;
+							font-size: larger;
+							color: rgba(235, 235, 235, 0.808);
+						}
+
+						@media only screen and (max-width: 768px) {
+							margin: 5px 0;
+							padding: 0;
+						}
+					}
+				}
+			}
+
+			.acadamic,
+			.experience {
+				ul {
+					li {
+						list-style-type: circle;
+						font-size: larger;
+						color: rgba(235, 235, 235, 0.808);
+					}
+				}
+			}
+
+			.experience {
+				margin-top: 2rem;
+				.companies_section {
+					ul {
+						li {
+							list-style: none;
+							font-size: larger;
+							color: rgba(235, 235, 235, 0.808);
+						}
+					}
+				}
+				span {
+					font-weight: 400;
+					text-decoration: underline;
+					font-size: large;
+					color: rgb(253, 253, 253);
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: 768px) {
+		margin: 5px;
+	}
+}
